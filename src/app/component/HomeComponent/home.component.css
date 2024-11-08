@@ -1,0 +1,13 @@
+.home {
+  text-align: center;
+  color: #f5b914;
+  background-color: #1b1b1b;
+  padding: 20px;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
