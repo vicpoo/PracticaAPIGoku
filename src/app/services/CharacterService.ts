@@ -12,7 +12,7 @@ export class CharacterService {
 
   constructor(private http: HttpClient) {}
 
-  getAllCharacters(page: number = 1, limit: number = 10): Observable<ICharacter[]> {
+  getAllCharacters(page: number = 1, limit: number = 20): Observable<ICharacter[]> {
     const url = `${this.apiUrl}?page=${page}&limit=${limit}`;
     return this.http.get<{ items: ICharacter[] }>(url).pipe(
       map(response => response.items),
